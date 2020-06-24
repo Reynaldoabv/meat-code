@@ -1,0 +1,43 @@
+@import '../../sass/variables.scss';
+
+.text-animation{
+    background: transparent;
+    color: $gray;
+    font-family: 'Caveat', cursive;
+
+    .text{
+        font-size: 100px;
+        font-weight: bold;
+        color: $gray;
+        padding-left: 80px;
+        padding-top: 10px;
+        background-image: url('../../assets/hero-shape.png');
+        background-repeat: no-repeat;
+        background-position: bottom right; 
+        height: 59vh;
+    }
+
+    @media (max-width: 992px) { 
+        .text{
+            font-size: 80px;
+            padding-left: 30px;
+            padding-top: 0;
+            height: 69vh;
+        }
+    }
+    
+    @media (max-width: 768px) { 
+        .text{
+            font-size: 50px;
+            padding-left: 20px;
+            height: 49vh;
+        }
+    }
+
+    @media (max-width: 576px) { 
+        .text{
+            font-size: 35px;
+            height: 49vh;
+        }
+    }
+}

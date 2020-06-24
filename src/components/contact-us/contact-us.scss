@@ -1,0 +1,140 @@
+@import '../../sass/variables.scss';
+
+.contact-us {
+    font-family: 'Open Sans', sans-serif;
+
+    .contact-us-title {        
+        h2 {
+            font-size: 80px;
+            font-weight: bold;
+            font-family: 'Caveat', cursive;
+            margin-top: 20px;  
+        }      
+    }    
+
+    .contact-us-form {
+        font-size: 15px;
+
+        .input {
+            width: 100%;
+        }
+
+        input[type="text"]:focus{
+            border: 3px solid $yellow;
+        }
+
+        input[type="email"]:focus{
+            border: 3px solid $yellow;
+        }
+
+        .contact-us-form-button {
+            margin: 20px 0;
+            margin-left: 100px;
+            border-radius: 15px;
+            height: 35px;
+            width: 40%;
+            background-color: $yellow;
+            border: 2px solid $yellow;
+            color: $white;
+            font-weight: bold;
+            font-size: 12px;
+
+            &:hover{
+                background-color: $light-blue;
+                border: 2px solid $light-blue;
+            }
+        }
+    }
+
+    @media (max-width: 992px) { 
+        .contact-us-title {        
+            h2 {
+                font-size: 60px;
+            }      
+        } 
+
+        .contact-us-form {
+            font-size: 13px;
+    
+            input[type="text"]:focus{
+                border: 2px solid $yellow;
+            }
+    
+            input[type="email"]:focus{
+                border: 2px solid $yellow;
+            }
+    
+            .contact-us-form-button {
+                margin-left: 90px;
+                border-radius: 15px;
+                height: 25px;
+                font-size: 10px;
+            }
+        }
+    }
+    
+    @media (max-width: 768px) {  
+        .contact-us-title {        
+            h2 {
+                font-size: 50px;
+            }      
+        } 
+
+        .contact-us-form {
+            font-size: 12px;
+    
+            input[type="text"]:focus{
+                border: 1px solid $yellow;
+            }
+    
+            input[type="email"]:focus{
+                border: 1px solid $yellow;
+            }
+    
+            .contact-us-form-button {
+                margin-left: 60px;
+                border-radius: 15px;
+                height: 20px;
+                font-size: 8px;
+                width: 45%;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {  
+        .contact-us-title {        
+            h2 {
+                font-size: 40px;
+            }      
+        } 
+
+        .contact-us-form {
+            font-size: 10px;
+    
+            .contact-us-form-button {
+                margin-left: 60px;
+                border-radius: 15px;
+                height: 20px;
+                font-size: 8px;
+                width: 45%;
+            }
+        }
+    }
+
+    @media (max-width: 450px) {  
+        .contact-us-title {        
+            h2 {
+                font-size: 30px;
+            }      
+        } 
+
+        .contact-us-form {    
+            .contact-us-form-button {
+                margin-left: 20px;
+                border-radius: 15px;
+                height: 18px;
+                width: 75%;
+            }
+        }
+    }
+}

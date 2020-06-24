@@ -1,0 +1,128 @@
+@import '../../sass/variables.scss';
+
+.header {
+    display: flex;
+    height: 150px;
+    align-items: center;
+
+    .logo {
+        height: 90px;
+        width: 250px;
+        padding-left: 100px;
+    }
+
+    .social-media {
+        display: flex;
+
+        .facebook{
+            height: 52px;
+            width: 52px;
+            border: solid 2px $light-blue;
+            border-radius: 50%;
+            padding: 15px;
+            margin-right: 30px;
+        }
+    
+        .instagram{
+            height: 52px;
+            width: 52px;
+            border: solid 2px $red;
+            border-radius: 50%;
+            padding: 10px;
+            margin-right: 30px;
+        }
+    
+        .youtube{
+            height: 52px;
+            width: 52px;
+            border: solid 2px $yellow;
+            border-radius: 50%;
+            padding: 10px;
+            margin-right: 30px;
+        }
+    }
+
+    @media (max-width: 992px) { 
+        .logo {
+            height: 70px;
+            width: 200px;
+            padding-left: 50px;
+        }
+
+        .social-media {    
+            .facebook{
+                height: 45px;
+                width: 45px;
+                padding: 10px;
+            }
+        
+            .instagram{
+                height: 45px;
+                width: 45px;
+                padding: 10px;
+            }
+        
+            .youtube{
+                height: 45px;
+                width: 45px;
+                padding: 10px;
+            }
+        }
+    }
+    
+    @media (max-width: 768px) { 
+        .logo {
+            height: 50px;
+            width: 175px;
+            padding-left: 40px;
+        }
+
+        .social-media {    
+            .facebook{
+                height: 35px;
+                width: 35px;
+                padding: 8px;
+            }
+        
+            .instagram{
+                height: 35px;
+                width: 35px;
+                padding: 8px;
+            }
+        
+            .youtube{
+                height: 35px;
+                width: 35px;
+                padding: 8px;
+            }
+        }
+    }
+
+    @media (max-width: 450px) { 
+        .logo {
+            height: 40px;
+            width: 150px;
+            padding-left: 30px;
+        }
+
+        .social-media {    
+            .facebook{
+                height: 25px;
+                width: 25px;
+                padding: 5px;
+            }
+        
+            .instagram{
+                height: 25px;
+                width: 25px;
+                padding: 5px;
+            }
+        
+            .youtube{
+                height: 25px;
+                width: 25px;
+                padding: 5px;
+            }
+        }
+    }
+}
